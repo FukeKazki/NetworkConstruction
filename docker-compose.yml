@@ -1,8 +1,15 @@
 version: '3'
 services:
-  main:
+  client:
     build:
       context: .
-      dockerfile: ./main/Dockerfile
+      dockerfile: ./client/Dockerfile
+    tty: true
+    stdin_open: true
+
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
     tty: true
     stdin_open: true
