@@ -31,7 +31,7 @@ docker-compose up
 docker-compose up -d {$container_name}
 
 # コンテナに入る
-docker-compose exec {$container_name} bash
+docker -it exec {$container_name} bash
 
 # コンテナ起動〜入るまで
 dokcer-compsoe run {$container_name} bash
