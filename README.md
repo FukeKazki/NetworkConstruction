@@ -34,7 +34,7 @@ docker-compose up -d {$container_name}
 docker -it exec {$container_name} bash
 
 # コンテナ起動〜入るまで
-dokcer-compsoe run {$container_name} bash
+dokcer-compose run {$container_name} bash
 ```
 
 ## Used
